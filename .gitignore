@@ -1,0 +1,28 @@
+# Ignore root .env files
+.env
+.env.local
+
+# Ignore frontend env
+frontend/.env
+frontend/.env.*.local
+
+# Ignore backend env
+backend/.env
+backend/.env.*.local
+
+# Node modules & build (frontend)
+frontend/node_modules
+frontend/dist
+frontend/.next
+
+# Gradle / Maven / IntelliJ (backend)
+backend/target/
+backend/.gradle/
+backend/.idea/
+backend/.mvn/
+*.iml
+
+# Mac/Windows system files
+.DS_Store
+Thumbs.db
+
