@@ -5,7 +5,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class EnvConfig {
-
     static {
         // Detect if running locally (Render sets an env var "RENDER")
         boolean isLocal = System.getenv("RENDER") == null;
@@ -22,12 +21,12 @@ public class EnvConfig {
             System.out.println("Loaded environment from .env file (LOCAL)");
         } else {
             // Load from system environment (Render, Docker)
-            System.setProperty("DB_URL", System.getenv("DB_URL"));
-            System.setProperty("DB_USERNAME", System.getenv("DB_USERNAME"));
-            System.setProperty("DB_PASSWORD", System.getenv("DB_PASSWORD"));
-            System.setProperty("JWT_SECRET", System.getenv("JWT_SECRET"));
-            System.setProperty("PORT", System.getenv("PORT") != null ? System.getenv("PORT") : "8080");
-            System.out.println("Loaded environment from system variables (PRODUCTION)");
+//            System.setProperty("DB_URL", System.getenv("DB_URL"));
+//            System.setProperty("DB_USERNAME", System.getenv("DB_USERNAME"));
+//            System.setProperty("DB_PASSWORD", System.getenv("DB_PASSWORD"));
+//            System.setProperty("JWT_SECRET", System.getenv("JWT_SECRET"));
+//            System.setProperty("PORT", System.getenv("PORT") != null ? System.getenv("PORT") : "8080");
+//            System.out.println("Loaded environment from system variables (PRODUCTION)");
         }
     }
 
