@@ -11,7 +11,7 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginPage from './auth/LoginPage';
-import Dashboard from './pages/DashBoard';
+import Dashboard from './pages/Dashboard';
 import { AuthProvider } from './context/AuthContext';
 import ReactDOM from 'react-dom/client';
 import PrivateRoute from './auth/PrivateRoute';
